@@ -1,0 +1,11 @@
+---
+layout:  main
+---
+
+<div>
+    {% for slug in site.data.site_config.section_order %}
+        {% assign section = site.sections | where:"slug", slug  | first %}
+
+        {{section.output}}
+    {% endfor %}
+</div>

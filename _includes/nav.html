@@ -1,0 +1,16 @@
+
+<div class="container-fluid">
+  <div class="nav-wrapper" >
+    <div class="fixed-nav">
+      <div id="nav" class="text-center">
+        <ul class="list-inline">
+            {% for slug in site.data.site_config.section_order %}
+              {% assign section = site.sections | where:"slug", slug  | first %}
+              <li> 
+                  <a href="#{{section.slug}}">{{section.title}}</a>
+              </li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>

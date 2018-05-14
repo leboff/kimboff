@@ -1,0 +1,20 @@
+---
+---
+@import "fontawesome.overrides";
+@import "fontawesome/fontawesome";
+@import "fontawesome/fa-regular";
+@import "fontawesome/fa-solid";
+
+/* bootstrap styles */
+@import "bootstrap.overrides";
+@import "bootstrap";
+
+/* custom styles */
+@import "main";
+@import "travel";
+@import "parallax";
+
+/* slick styles */
+@import "slick.overrides";
+@import "slick";
+@import "slick-theme";

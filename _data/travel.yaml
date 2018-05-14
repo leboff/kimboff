@@ -1,0 +1,16 @@
+planes: 
+  title: Planes
+  icon: "glyphicon glyphicon-plane"
+  content: "We recommend flying to PHL. A taxi to center city is a flat rate of $28.50."
+trains:
+  title: Trains
+  icon: "fa fa-train"
+  content: "Amtrak will take you to 30th St. Station which is a short walk taxi ride to Water Works or The Logan Hotel. Alternatively, you can take Regional Rail to Suburban Station which is about a five minute walk to the hotel."
+automobiles:
+  title: Automobiles
+  icon: "glyphicon glyphicon-road"
+  page: "directions"
+dining: 
+  title: "Dining"
+  icon: "glyphicon glyphicon-cutlery"
+  page: "dining"
