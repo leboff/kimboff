@@ -6,13 +6,18 @@
     font-family: 'Playfair Display';
     src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
  }
-$brand-primary: #2A2024;
+
+ $theme-colors: (
+  "primary": #2A2024
+ );
+
 $link-hover-color: #DAC294;
 $link-hover-decoration: none;
 $font-family-sans-serif: 'Tenor Sans', sans-serif;
 $font-family-serif: 'Playfair Display', serif;
 $headings-font-family: $font-family-serif;
-$font-size-base: 18px;
-$font-size-h1: floor(($font-size-base * 3.9));
-$font-size-h2: floor(($font-size-base * 3.2));
+$font-size-base: 2rem;
+// $font-size-base: 18px;
+// $font-size-h1: floor(($font-size-base * 3.9));
+// $font-size-h2: floor(($font-size-base * 3.2));
 $icon-font-path: '/assets/fonts/bootstrap/';

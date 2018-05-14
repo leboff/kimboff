@@ -16,6 +16,7 @@ div.bhoechie-tab-container{
   }
   div.bhoechie-tab-menu div.list-group{
     margin-bottom: 0;
+    display: block;
   }
   div.bhoechie-tab-menu div.list-group>a{
     margin-bottom: 0;
@@ -57,3 +58,26 @@ div.bhoechie-tab-container{
   div.bhoechie-tab div.bhoechie-tab-content:not(.active){
     display: none;
   }
+
+.list-group-horizontal {
+  width: 100%;
+}
+.list-group.list-group-horizontal{
+	display: flex;
+	flex-direction: row;
+}
+
+.list-group.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-right: 0;
+ 	border-right-width: 0;
+}
+.list-group.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+	border-right-width: 1px;
+}

@@ -89,6 +89,7 @@
   .name-box{
     color: #ffffff;
     text-shadow: 2px 2px #000000;
+
   }
   .name-box-sm{
     background-image: url("//res.cloudinary.com/dith5kqlb/image/upload/h_300/v1514586745/Kimboff/us.jpg");
@@ -102,8 +103,9 @@
     background-repeat: no-repeat;
     height:300px;
   }
-  .section {
-    padding-top: 40px;
+
+  .section{
+    margin-bottom: 80px;
   }
   .section.soon{
     min-height:0px;
@@ -111,10 +113,18 @@
   .fixed-nav {
     background-color: #ffffff;
     width: 100%;
+    position: sticky;
+    min-height:100px;
+
   }
   
   .nav-wrapper {
-    min-height:80px;
+    min-height:120px;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index: 1000;
   }
   #nav {
     padding-top: 20px;
@@ -169,9 +179,6 @@
   .col-centered{
     float: none;
     margin: 0 auto;
-  }
-  .destination .list-group-item{
-    float:left;
   }
   .directions{
     padding-top: 15px;
