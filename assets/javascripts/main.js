@@ -3,7 +3,7 @@ console.log('\'Allo \'Allo!');
 
   $.stellar({
       responsive: true,
-      hideDistantElements: false      
+      hideDistantElements: true      
   });
 
 

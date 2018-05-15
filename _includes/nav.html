@@ -6,7 +6,7 @@
           {% for slug in site.data.site_config.section_order %}
             {% assign section = site.sections | where:"slug", slug  | first %}
             <li class="list-inline-item"> 
-                <a href="#{{section.slug}}">{{section.title}}</a>
+                <small><a href="#{{section.slug}}">{{section.title}}</a></small>
             </li>
           {% endfor %}
       </ul>

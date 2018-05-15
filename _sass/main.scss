@@ -132,7 +132,9 @@
     height: 60px;
     text-transform: uppercase;
   }
-  
+  .main{
+    overflow: hidden;
+  }
   .vcenter {
     display: inline-block;
     vertical-align: middle;

@@ -2,10 +2,11 @@
 layout:  main
 ---
 
-<div>
+<div class="main">
     {% for slug in site.data.site_config.section_order %}
         {% assign section = site.sections | where:"slug", slug  | first %}
-
-        {{section.output}}
+        <div class="col-lg-12">
+            {{section.output}}
+        </div>
     {% endfor %}
 </div>
