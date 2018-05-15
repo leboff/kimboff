@@ -1,15 +1,18 @@
 ---
-title: Event
-slug: event
+title: Events
+slug: events
 layout: section
+header: Events
 ---
-<div class="col-lg-6 mx-auto text-center pb-5">
-    <h2>October 19, 2018</h2>
-    <h3>5pm - Mill House Deck</h3>
-    <h2>Water Works</h2>
-</div>
 <div class="col-lg-12">
     <div class="parallax waterworks row d-none d-md-flex" data-stellar-background-ratio="0.7">
+        <div class="col-lg-9 mx-auto">
+            <div class="card-deck">
+                {% for event in site.events %}
+                    {{event.output}}
+                {% endfor %}
+            </div>
+        </div>
     </div>
     <div class="parallax waterworks row d-sm-flex d-md-none">
     </div>

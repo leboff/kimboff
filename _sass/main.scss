@@ -18,6 +18,7 @@
   
   #nav {
     text-transform: uppercase;
+    font-family: $font-family-sans-serif;
   }
   .main{
     overflow: hidden;
@@ -31,4 +32,16 @@
   .carousel-thumbnail{
     padding: 20px;
   }
-  
+  .thin.card{
+    background: rgba(255, 255, 255, .8);
+  }
+  .thin.card .card-header{
+    background-color: inherit;
+  }
+
+  .golden {
+    color: $gold;
+  }
+  .registry-card .card-img-top {
+    // max-width: 240px;
+  }
