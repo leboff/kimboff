@@ -1,15 +1,12 @@
-
-<div class="nav-wrapper" >
-  <div class="fixed-nav">
-    <div id="nav" class="text-center">
-      <ul class="list-inline">
-          {% for slug in site.data.site_config.section_order %}
-            {% assign section = site.sections | where:"slug", slug  | first %}
-            <li class="list-inline-item"> 
-                <small><a href="#{{section.slug}}">{{section.title}}</a></small>
-            </li>
-          {% endfor %}
-      </ul>
-    </div>
-  </div>
+<div class="fixed-nav col-lg-12 py-3" id="nav">
+  <ul class="nav justify-content-center">
+    {% for slug in site.data.site_config.section_order %} 
+    {% assign section = site.sections | where:"slug", slug | first %}
+    <li class="nav-item">
+      <small>
+        <a class="nav-link active" href="#{{section.slug}}">{{section.title}}</a>
+      </small>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
