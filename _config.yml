@@ -2,6 +2,8 @@ collections:
 - activities
 - events
 - sections
+sass:
+  style: compressed
 assets:
   compress:
     css: true
@@ -13,6 +15,7 @@ assets:
     - assets/javascripts
     - assets/javascripts/libraries
     - assets/javascripts/libraries
+    - styles/
   compressors:
     uglifier:
       comments: false
