@@ -42,6 +42,9 @@
   .golden {
     color: $gold;
   }
+  .minh-100 {
+    min-height: 100% !important;
+  }
   .registry-card{
     transition: 0.3s;
   }

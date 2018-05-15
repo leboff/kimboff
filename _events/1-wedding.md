@@ -15,4 +15,4 @@ Friday, October 19, 2018 \| 5:30 PM
 640 Water Works Drive  
 Philadelphia, PA 19103
 
-###### Complimentary valet
+###### Black Tie Preferred • Complimentary valet
