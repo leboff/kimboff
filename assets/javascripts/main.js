@@ -3,20 +3,12 @@ console.log('\'Allo \'Allo!');
 
   $.stellar({
       responsive: true,
-      hideDistantElements: true      
+      hideDistantElements: true,
+      horizontalScrolling: false      
   });
 
 
-  $('#nav').find('a').each(function(i, el){
-      var href = $(el).attr('href');
-      $(el).click(function(){
-        $(window).scrollTo($('[data-location="'+href.substring(1)+'"]'), {
-            duration: 1000,
-            offset: -120
-        });
-      })
-     
-  })
+  
 
   new WOW().init({
     live: true
@@ -32,6 +24,23 @@ console.log('\'Allo \'Allo!');
     $('div.bhoechie-tab>div.bhoechie-tab-content').eq(index).addClass('active');
   });
 
-
+  function scrollHandler(){
+    var href = $(this).attr('href');
+    var navHeight = $('#nav').height();
+    $(window).scrollTo($('[data-location="'+href.substring(1)+'"]'), {
+      duration: 1000,
+      offset: -(navHeight+36)
+    });
+  }
+  function setNav(){
+    $('#nav').find('a').each(function(i, el){
+        $(el).unbind("click", scrollHandler);
+        $(el).bind("click", scrollHandler);
+    })
+  }
+  setNav();
+  $( window ).resize(function() {
+    setNav();
+  })
 
 })(jQuery);

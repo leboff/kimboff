@@ -7,10 +7,6 @@
     margin-bottom: 40px;
   }
 
-  .section.soon{
-    min-height:0px;
-  }
-
   .fixed-nav {
     background-color: #ffffff;
     width: 100%;
@@ -27,40 +23,6 @@
     overflow: hidden;
   }
   
-  .directions{
-    width:100%;
-  }
-  .registry {
-    background: #ffffff;
-    padding: 10px;
-  }
-  .registry-card{
-    box-shadow: 0 10px 5px #888888;
-    text-align: center; margin: 1em 0;
-    // height: 400px;
-  
-    transition: 0.3s;
-  }
-  .registry-card:hover{
-    box-shadow: 0 20px 16px 0 #888888
-  }
-  .registry-card .registry-img{
-    margin: 0 auto;
-    vertical-align: middle;
-    max-height: 400px;
-    max-width: 80%;
-    vertical-align: middle;
-  }
-  
-  .card-helper{
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-  .col-centered{
-    float: none;
-    margin: 0 auto;
-  }
   .directions{
     padding-top: 15px;
     display:none;
