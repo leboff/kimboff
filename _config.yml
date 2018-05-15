@@ -14,7 +14,6 @@ assets:
     - assets/images/slick
     - assets/javascripts
     - assets/javascripts/libraries
-    - assets/javascripts/libraries
     - assets/icons
     - styles/
   compressors:

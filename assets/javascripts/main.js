@@ -1,8 +1,17 @@
+
+//= require libraries/jquery-2.2.4.js
+//= require libraries/jquery.placepicker.min.js
+//= require libraries/jquery.scrollTo.js
+//= require libraries/jquery.stellar.js
+//= require libraries/wow.js
+//= require libraries/noframework.waypoints.js
+//= require libraries/slick.min.js
+//= require libraries/bootstrap.bundle.js
+//= require carousel.js
+//= require travel.js
+
 console.log('\'Allo \'Allo!');
 (function ($) {
-
-
-  
 
   new WOW().init({
     live: true
