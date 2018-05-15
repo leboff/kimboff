@@ -2,3 +2,18 @@ collections:
 - activities
 - events
 - sections
+assets:
+  compress:
+    css: true
+    js: true
+  sources:
+    - assets/fonts
+    - assets/images/logos
+    - assets/images/slick
+    - assets/javascripts
+    - assets/javascripts/libraries
+    - assets/javascripts/libraries
+  compressors:
+    uglifier:
+      comments: false
+      harmony: true

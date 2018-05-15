@@ -7,6 +7,7 @@
     slidesToShow: 6,
     slidesToScroll: 2,
     variableWidth: true,
+    lazyLoad: 'ondemand',
     responsive: [{
         breakpoint: 1024,
         settings: {
