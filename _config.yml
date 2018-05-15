@@ -4,19 +4,3 @@ collections:
 - sections
 sass:
   style: compressed
-assets:
-  compress:
-    css: true
-    js: true
-  sources:
-    - assets/fonts
-    - assets/images/logos
-    - assets/images/slick
-    - assets/javascripts
-    - assets/javascripts/libraries
-    - assets/icons
-    - styles/
-  compressors:
-    uglifier:
-      comments: false
-      harmony: true

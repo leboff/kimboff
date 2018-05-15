@@ -12,8 +12,3 @@ gem "jekyll", "~> 3.8"
 gem "uglifier", "~> 4"
 gem "sprockets", "~> 4.0.beta"
 gem "therubyracer"
-
-group :jekyll_plugins do
-    gem 'jekyll-assets'
-    gem 'octopress-debugger'
-end
