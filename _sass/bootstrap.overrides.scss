@@ -21,3 +21,7 @@ $font-size-base: 2rem;
 // $font-size-h1: floor(($font-size-base * 3.9));
 // $font-size-h2: floor(($font-size-base * 3.2));
 $icon-font-path: '/assets/fonts/bootstrap/';
+
+.little-text, .little-text.form-control {
+    font-size: $font-size-base/1.5;
+}

@@ -20,16 +20,10 @@
       updateMap();
     }
   });
-  var directionsTemplate = _.template('//www.google.com/maps/embed/v1/directions?' +
-    'key=AIzaSyCkJd4wwnJr1-KYHLFJU58ID2cM3evahcg' +
-    '&origin=place_id:<%= origin_id %>' +
-    '&destination=place_id:<%= destination_id %>');
   var updateMap = function () {
     if (origin && destination) {
-      var mapUrl = directionsTemplate({
-        origin_id: origin,
-        destination_id: destination
-      })
+      var mapUrl = `//www.google.com/maps/embed/v1/directions?key=AIzaSyCkJd4wwnJr1-KYHLFJU58ID2cM3evahcg&origin=place_id:${origin}&destination=place_id:${destination}`;
+
       $('#directions').attr('src', mapUrl);
       $('#directions').ready(function(){
         $('#directions').show();
