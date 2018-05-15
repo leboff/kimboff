@@ -1,2 +1,2 @@
 https://github.com/heroku/heroku-buildpack-nginx.git
-https://github.com/aokon/dokku-buildpack-jekyll3-nginx
+https://github.com/aokon/dokku-buildpack-jekyll3-nginx/tree/add-support-for-ruby-version
