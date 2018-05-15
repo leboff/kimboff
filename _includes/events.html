@@ -1,0 +1,13 @@
+<ul class="nav justify-content-center pb-5 event-nav">
+    {% for event in include.events %}
+    <li class="nav-item">
+        <a class="nav-link {% if event.default %} active {% endif %} event-nav-link" href="#{{event.tab}}">{{event.title}}</a>
+    </li>
+    {% endfor %}
+</ul>
+<div class="tab-content event-tab h-75">
+    {% for event in include.events %}
+        {{event.output}}
+    {% endfor %}
+</div>
+      

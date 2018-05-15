@@ -1,12 +1,6 @@
 console.log('\'Allo \'Allo!');
 (function ($) {
 
-  $.stellar({
-      responsive: true,
-      hideDistantElements: true,
-      horizontalScrolling: false      
-  });
-
 
   
 
@@ -38,9 +32,35 @@ console.log('\'Allo \'Allo!');
         $(el).bind("click", scrollHandler);
     })
   }
-  setNav();
+  function setParallax(){
+    if($('#smallDetector').is(':hidden')){
+      $.stellar({
+        responsive: true,
+        hideDistantElements: true,
+        horizontalScrolling: false
+      });
+    }
+    else{
+      $.stellar('destroy')
+    }
+  }
   $( window ).resize(function() {
     setNav();
+    setParallax();
+  });
+
+  $('a.event-nav-link').click(function(ev){
+    ev.preventDefault();
+    $(this).tab('show');
   })
+
+  $('.registry-card').hover(function(){
+    $(this).addClass('shadow-lg');
+  }, function(){
+    $(this).removeClass('shadow-lg');
+  })
+
+  setNav();
+  setParallax();
 
 })(jQuery);

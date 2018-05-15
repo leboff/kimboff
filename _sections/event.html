@@ -5,15 +5,9 @@ layout: section
 header: Events
 ---
 <div class="col-lg-12">
-    <div class="parallax waterworks row d-none d-md-flex" data-stellar-background-ratio="0.7">
+    <div class="parallax waterworks row" data-stellar-background-ratio="0.7">
         <div class="col-lg-9 mx-auto">
-            <div class="card-deck">
-                {% for event in site.events %}
-                    {{event.output}}
-                {% endfor %}
-            </div>
+            {% include events.html events = site.events %}
         </div>
-    </div>
-    <div class="parallax waterworks row d-sm-flex d-md-none">
     </div>
 </div>

@@ -42,6 +42,10 @@
   .golden {
     color: $gold;
   }
-  .registry-card .card-img-top {
-    // max-width: 240px;
+  .registry-card{
+    transition: 0.3s;
+  }
+
+  .event-nav .nav-item {
+    background: $white;
   }
