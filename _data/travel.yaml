@@ -1,3 +1,7 @@
+- name: "trolley"
+  title: Trolley
+  icon: "fas fa-bus"
+  content: "Trolley transportation will be provided to the Waterworks from the Logan Hotel."
 - name: planes
   title: Planes
   icon: "fas fa-plane"

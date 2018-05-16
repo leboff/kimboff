@@ -2,9 +2,9 @@ section_order:
   - home
   - us
   - events
-  - registry
-  - travel
   - accomodations
+  - travel
+  - registry
 carousel_images: 
   - carousel-2016-05-21
   - carousel-2017-07-08
